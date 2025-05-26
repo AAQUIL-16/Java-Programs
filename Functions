@@ -1,0 +1,33 @@
+import java.util.*;
+public class Function{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        while(true){
+        System.out.print("Enter the number:");
+        int a=s.nextInt();
+        if(a>0){
+        System.out.println("Dont enter the negative numbers!!");
+        }
+        isprime(a);
+        }
+    }
+
+    static void isprime(int n){
+        int c=2;
+        boolean isprime=true;
+        while (c<=Math.sqrt(n)){
+            if(n%c==0){
+            isprime=false;
+            break;
+            }
+            c++;
+        }
+    if(isprime){
+    System.out.println("Prime number");
+    }
+    else{
+    System.out.println("Not a Prime number");
+    }
+    }
+}
+
