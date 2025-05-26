@@ -1,0 +1,42 @@
+import java.util.*;
+public class casecheck{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int r=0;
+        while (true) { 
+        System.out.print("Enter a  operation:");
+        char c=s.next().trim().charAt(0);
+        if(c == '+'|| c == '-' || c == '*'|| c == '/'|| c == '%'){
+        System.out.print("Enter a num1:");
+        int num1=s.nextInt();
+        System.out.print("Enter a num2:");
+        int num2=s.nextInt();
+        if(c=='+'){
+        r=num1+num2;
+        }
+        if(c=='-'){
+        r=num1-num2;
+        }
+        if(c=='*'){
+        r=num1*num2;
+        }
+        if(c=='/'){
+            if(num2!=0){
+                r=num1/num2;
+            }
+        }
+        if(c=='%'){
+        r=num1%num2;
+        }
+        }
+        else if(c=='x' || c=='X'){
+        break;
+        }
+        else{
+        System.out.println("Invalid Operator");
+        break;
+        }
+        System.out.println(r);
+        }
+        }
+    }
