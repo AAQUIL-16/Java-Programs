@@ -1,0 +1,30 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public class Max{
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+
+        int[] a=new int[5];
+
+        for(int i=0;i<a.length;i++){
+            a[i]=in.nextInt();
+        }
+
+        System.out.println(Arrays.toString(a));
+
+        max(a);
+
+    }
+
+    static void max(int[] a){
+        int maxval=a[0];
+        for(int i=1;i<a.length;i++){
+            if(a[i]>maxval){
+                maxval=a[i];
+            }
+        }
+        System.out.print("The maximum value is:");
+        System.out.println(maxval);
+
+    }
+}
