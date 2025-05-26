@@ -1,0 +1,23 @@
+import java.util.*;
+public class switch1{
+    public static void main(String[] args) {
+        Scanner a=new Scanner(System.in);
+        while(true){
+        System.out.print("Enter the no:");
+        int b=a.nextInt();
+        if(b==0){
+        break;
+        }
+        switch(b){
+            case 1 -> System.out.println("Sunday");
+            case 2 -> System.out.println("Monday");
+            case 3 -> System.out.println("Tuesday");
+            case 4 -> System.out.println("Wednesday");
+            case 5 -> System.out.println("Thursday");
+            case 6 -> System.out.println("Friday");
+            case 7 -> System.out.println("Saturday");
+            default -> System.out.println("Enter valid Identifier");
+        }
+        }
+    }
+}
